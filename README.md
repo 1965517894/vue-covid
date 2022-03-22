@@ -1,7 +1,8 @@
 # vue-covid
 
 仿丁香医生，vue 实例练习项目
-[界面预览](https://1965517894.github.io/vue-covid/)
+
+<!-- [界面预览](https://1965517894.github.io/vue-covid/) -->
 
 ## 修改记录
 
