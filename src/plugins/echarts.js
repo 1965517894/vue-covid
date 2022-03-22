@@ -55,7 +55,7 @@ export default {
                   </div>
                   <div style="background-color:#eee;width:1px;margin:0.06rem 0.1rem"></div>
                   <div style="line-height:28px">
-                    <a href="/covcity/${item.name}" style="color:#fff">详情<span class="iconfont">&#xe61b;</span></a>
+                    <a href="/#/covcity/${item.name}" style="color:#fff">详情<span class="iconfont">&#xe61b;</span></a>
                   </div>
               <div/>
               `;
