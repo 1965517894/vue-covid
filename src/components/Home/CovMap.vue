@@ -13,12 +13,12 @@
       color="blue"
       animated
     >
-      <van-tab title="现存确诊">
-        <div id="curConfirm" class="map"></div>
-      </van-tab>
-      <van-tab title="累计确诊">
-        <div id="confirm" class="map"></div>
-      </van-tab>
+        <van-tab title="现存确诊">
+          <div id="curConfirm" class="map"></div>
+        </van-tab>
+        <van-tab title="累计确诊">
+          <div id="confirm" class="map"></div>
+        </van-tab>
     </van-tabs>
 
     <!-- 地图容器 -->
@@ -47,7 +47,6 @@ export default {
       this.$nextTick(() => {
         this.$echarts.chinaMap("confirm", this.mapData.confirm);
       })
-
     }
   },
 

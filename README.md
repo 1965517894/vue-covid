@@ -14,4 +14,4 @@
 - 疫情城市地图加载报错
 - vant 选项卡大小未进行 rem 适配
 - 页面第一次加载时间长，发现是因为chunk-vendors.js太大，且服务器带宽太小
-- ~~从其他路由返回首页，有时出现疫情地图加载不出来~~
+- ~~页面回退，echarts地图不能显示问题 `echartsDom.remove(_echarts_instance_)`~~

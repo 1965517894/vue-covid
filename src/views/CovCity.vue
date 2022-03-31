@@ -19,7 +19,7 @@ export default {
     props: ["cityname"],
     components: { FooterCom },
     mounted() {
-        this.$echarts.cityMap("main", "内蒙古", [])
+        this.$echarts.cityMap("main", this.cityname, [])
     },
 
 };

@@ -39,7 +39,9 @@ export default {
        * @param {*} data
        */
       chinaMap(id, data) {
-        let myChart = echarts.init(document.getElementById(id));
+        const dom = document.getElementById(id);
+        dom.removeAttribute("_echarts_instance_");
+        let myChart = echarts.init(dom);
         let option = {
           tooltip: {
             //悬浮弹框
@@ -55,7 +57,7 @@ export default {
                   </div>
                   <div style="background-color:#eee;width:1px;margin:0.06rem 0.1rem"></div>
                   <div style="line-height:28px">
-                    <a href="/#/covcity/${item.name}" style="color:#fff">详情<span class="iconfont">&#xe61b;</span></a>
+                    <a href="${location.href}covcity/${item.name}" style="color:#fff">详情<span class="iconfont">&#xe61b;</span></a>
                   </div>
               <div/>
               `;
@@ -172,7 +174,9 @@ export default {
       },
       // 城市地图
       cityMap(id, cityname, data) {
-        var myChart = echarts.init(document.getElementById(id));
+        const dom = document.getElementById(id);
+        dom.removeAttribute("_echarts_instance_");
+        let myChart = echarts.init(dom);
         var option = {
           tooltip: {
             //悬浮弹框
